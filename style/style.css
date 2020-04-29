@@ -73,8 +73,12 @@ html, body{
 	text-transform: uppercase;
 	font-size: 18px;
 	text-decoration: none;
+	opacity: .8;
 }
 
+.header__link:hover{
+	opacity: 1;
+}
 
 @media(max-width: 767px){
 	body.lock{
@@ -220,7 +224,7 @@ html, body{
 
 .content__title{
 	margin-top: 98px;
-	color: #02918c;
+	color: #00595f;
 	font-size: 46px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -228,7 +232,7 @@ html, body{
 
 .content__text{
 	margin: 77px 50px 90px;
-	color: #7e8287;
+	color: #00595f;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 41px;
@@ -243,7 +247,7 @@ html, body{
 	display: inline-block;
 	width: 24.7%;
 	height: auto;
-	border-right: 1px solid #02918c;
+	border-right: 1px solid #00595f;
 	text-align: center;
 }
 
@@ -253,7 +257,7 @@ html, body{
 
 .serv__title{
 	padding-top: 30px;
-	color: #7e8287;
+	color: #00595f;
 	font-size: 16px;
 	font-weight: 700;
 
@@ -261,7 +265,7 @@ html, body{
 
 .serv__text{
 	padding: 30px 20px 10px;
-	color: #7e8287;
+	color: #00595f;
 	font-size: 12px;
 	line-height: 21px;
 }
@@ -304,7 +308,7 @@ html, body{
 
 .services__title{
 	margin-top: 74px; 
-	color: #02918c;
+	color: #00595f;
 	font-size: 46px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -312,7 +316,7 @@ html, body{
 
 .services__text{
 	padding-top: 60px;
-	color: #7e8287;
+	color: #00595f;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 41px;
@@ -320,7 +324,7 @@ html, body{
 
 .servi__title{
 	padding-top: 17px;
-	color: #7e8287;
+	color: #00595f;
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -333,7 +337,7 @@ html, body{
 
 .servi__text{
 	padding-top: 19px;
-	color: #7e8287;
+	color: #00595f;
 	font-size: 12px;
 	line-height: 21px;
 	width: 230px;
@@ -352,7 +356,7 @@ html, body{
 
 .galery__title{
 	margin-top: 110px;
-	color: #02918c;
+	color: #00595f;
 	font-size: 46px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -361,7 +365,7 @@ html, body{
 .galery__text{
 	margin-top: 70px;
 	margin-bottom: 70px;
-	color: #7e8287;
+	color: #00595f;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 41px;
@@ -440,7 +444,7 @@ html, body{
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
 	font-size: 0.75em;
-	color: #02918c;
+	color: #00595f;
 	top: -5px;
 	-webkit-transition: all 0.225s ease;
 	transition: all 0.225s ease;
@@ -455,7 +459,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input label {
-	color:#02918c;
+	color:#00595f;
 	padding: 1.3rem 30px 1rem 30px;
 	position: absolute;
 	top: 10px;
@@ -528,23 +532,6 @@ textarea {
 /*=====-@MEDIA-=====*/
 
 
-@media (max-width: 768px) {
-	.menu{
-		display: none;
-	}
-	.submit-btn {
-		width:100%;
-		float: none;
-		text-align:center;
-	}
-}
-
-@media only screen and (max-width: 768px){
-	.styled-input {
-		width:100%;
-	}
-}
-
 
 input[type=checkbox] + label {
 	color: #ccc;
@@ -562,6 +549,13 @@ input[type=checkbox]:checked + label {
 @media screen and (max-width: 1100px){
 	.servi__text{
 	width: 200px;
+	}
+	.services__title{
+		margin-top: 50px;
+	}
+	.services__text{
+		padding-top: 30px;
+		line-height: 20px;
 	}
 }
 
@@ -592,32 +586,26 @@ input[type=checkbox]:checked + label {
 		font-size: 16px;
 		font-weight: 700;
 	}
-
 	.services__title{
 		margin-top: 30px;
 		font-size: 36px;
 	}
-
 	.services__text{
 		padding-top: 20px;
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 18px;
 	}
-
 	.servi__title{
 		padding-top: 10px;
 		font-size: 14px;
 		font-weight: 700;
-
 	}
-
 	.icons2{
 		margin-top: 30px;
 		width: 49%;
 		display:inline-block;
 	}
-
 	.servi__text{
 		padding-top: 15px;
 		padding-bottom: 20px;
@@ -633,12 +621,10 @@ input[type=checkbox]:checked + label {
 		margin: 0;
 		padding: 0;
 	}
-
 	.galery__title{
 		margin-top: 50px;
 		font-size: 36px;
 	}
-
 	.galery__text{
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -648,7 +634,49 @@ input[type=checkbox]:checked + label {
 	}
 }
 
-@media screen and (max-width: 760px){
+@media (max-width: 768px){
+	.block1{
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		width: 100%;
+		background-color: #f0f0e8;
+	}
+	.icons2{
+		text-align: center;
+	}
+	.service{
+		text-align: center;
+		width: 100%;
+		background-color:#f0f0e8;
+		display: block;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.block2{
+		display:none;
+	}
+	.services__title{
+		margin-top: 30px;
+		font-size: 26px;
+	}
+	.servi__text{
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.styled-input {
+		width:100%;
+	}
+		.menu{
+		display: none;
+	}
+	.submit-btn {
+		width:100%;
+		float: none;
+		text-align:center;
+	}
 	.content__text{
 		margin: 30px;
 		font-size: 12px;
@@ -662,7 +690,7 @@ input[type=checkbox]:checked + label {
 	}
 }
 
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
 	.head h1{
 		padding-top: 150px;
 		color: #fff;
@@ -680,29 +708,6 @@ input[type=checkbox]:checked + label {
 		border-radius: 3px;
 	}
 	.content__title{
-		margin-top: 30px;
-		font-size: 26px;
-	}
-	.block1{
-		margin: 0;
-		padding: 0;
-		display: inline-block;
-		width: 100%;
-		background-color: #f0f0e8;
-	}
-	.service{
-		text-align: center;
-		width: 100%;
-		background-color:#f0f0e8;
-		display: block;
-		height: auto;
-		margin: 0;
-		padding: 0;
-	}
-	.block2{
-		display:none;
-	}
-		.services__title{
 		margin-top: 30px;
 		font-size: 26px;
 	}
@@ -736,7 +741,7 @@ input[type=checkbox]:checked + label {
 		border-radius: 0;
 	}
 }
-@media screen and (max-width: 320px){
+@media (max-width: 320px){
 	.head h1{
 		padding-top: 80px;
 		color: #fff;
@@ -759,14 +764,11 @@ input[type=checkbox]:checked + label {
 	}
 }
 
+/*=====-FOOTER-=====*/
+
 .footer{
 	padding: 15px 0;
 	text-align: center;
 	font-size: 24px;
 	font-weight: 700;
 }
-
-color #00595f
-color #ff572a
-color #009494
-color #f0f0e8
