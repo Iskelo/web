@@ -155,7 +155,9 @@ html, body{
 	.header__list li{
 		text-align: center;
 		margin: 0 0 20px 0;
-		color: #f0f0e8;
+	}
+	.header__link{
+	color: #f0f0e8;
 	}
 }
 
